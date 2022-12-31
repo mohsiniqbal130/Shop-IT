@@ -1,0 +1,70 @@
+.Auth {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 20vh;
+    background-color: white;
+    font-family: Quicksand;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.Auth a:active {
+    color: black;
+}
+
+.Button * {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+@media(max-width: 700px) {
+    .Auth {
+        width: 70%;
+    }
+}
+
+@media(max-width: 500px) {
+    .Auth {
+        min-width: 320px;
+        width: 320px;
+        padding: 10px;
+    }
+    .Auth h3 {
+        font-size: 17px;
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.fade-enter-active,
+.fade-exit-active {
+    transition: opacity 500ms, transform 500ms;
+}

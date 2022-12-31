@@ -1,0 +1,34 @@
+.StepperCounter button {
+    /* padding: 5px 15px; */
+    font-size: 28px;
+    border: none;
+    margin-right: 15px;
+    width: 60px;
+    height: 50px;
+    background-color: rgb(229, 229, 229);
+    font-family: Quicksand;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.StepperCounter :disabled {
+    opacity: 0.6;
+}
+
+.StepperCounter button:focus {
+    outline: none;
+}
+
+.StepperCounter button:active {
+    opacity: 0.5;
+}
+
+.StepperCounter button:nth-child(1) {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+
+.StepperCounter button:nth-child(2) {
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 25%;
+}

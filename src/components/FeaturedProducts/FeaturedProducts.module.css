@@ -1,0 +1,13 @@
+.FeaturedProducts {
+    margin: 40px;
+}
+
+.FeaturedProducts h1:first-of-type {
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    width: 285px;
+    margin: auto;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,17 @@
+.NavigationItems {
+    display: flex;
+    list-style: none;
+}
+
+@media(max-width: 649px) {
+    .NavigationItems {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 649px) {
+    .DesktopOnly {
+        display: none;
+    }
+}

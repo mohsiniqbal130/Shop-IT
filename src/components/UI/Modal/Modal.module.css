@@ -1,0 +1,58 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.25s ease-out;
+    min-height: 100px;
+    border-radius: 10px;
+    font-family: Quicksand;
+}
+
+.fade-enter {
+    opacity: 0;
+    left: 5%;
+}
+
+.fade-enter-active {
+    left: 15%;
+    opacity: 1;
+}
+
+.fade-exit {
+    left: 5%;
+    opacity: 0;
+}
+
+.fade-exit-active {
+    left: 5%;
+    opacity: 0;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+    }
+    .fade-enter {
+        opacity: 0;
+        left: calc(50% - 400px);
+    }
+    .fade-enter-active {
+        left: calc(50% - 250px);
+        opacity: 1;
+    }
+    .fade-exit {
+        left: calc(50% - 400px);
+        opacity: 0;
+    }
+    .fade-exit-active {
+        left: calc(50% - 400px);
+        opacity: 0;
+    }
+}
